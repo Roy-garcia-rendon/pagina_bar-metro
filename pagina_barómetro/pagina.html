@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/www.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/c.css">
+    <title>BARÓMETRO</title>
+</head>
+<body>
+    <main id="principal">
+        <header>
+    <div class="Menu container">
+        <a href="#" class="logo">BARWEB</a>
+        <input type="checkbox" id="Menu">
+        <label for="Menu">
+            <ing src="media/Menu.png" class="Menu-icono" alt="">
+        </label>
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tablas.html">BARÓMETRO</a> </li>
+                <li><a href="galery.html">GALERIA</a></li>
+            </ul>
+
+        </nav>
+
+    </div>   
+    </header>
+    <p id="fecha"></p>
+    <script>
+        var fechaActual= new Date();
+        var dia=fechaActual.getDate();
+        var mes=fechaActual.getMonth() + 1;
+        var año=fechaActual.getFullYear();
+        document.getElementById("fecha").innerHTML="Fecha actual: " + dia +"/"+mes+"/"+año;
+    
+    </script> 
+       <div class="form-content">
+        <h2>Enviar un comentario</h2>
+        <form acción="https://formsubmit.co/rodrigoa.gr11@gmail.com" método="POST">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="emalil">Correo electronico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="coments">Opinión</label>
+            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+
+            <input class="btn" type="submit" value="enviar">
+            <input type="hidden" name="_next" value="file:///D:/subIII_Garcia%20Rendon%20Rodrigo%20Aner/pagina.html">
+        </form>
+
+    </div>
+
+</body>
+</html>
